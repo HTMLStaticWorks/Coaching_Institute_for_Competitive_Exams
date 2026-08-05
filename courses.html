@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Courses | Coaching</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                <span>Coaching<span class="brand-accent"></span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="study-packages.html">Packages</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="action-icon" aria-label="Toggle Dark Mode"
+                    title="Toggle Dark Mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button id="rtlToggle" class="action-icon" aria-label="Toggle RTL" title="Toggle RTL"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><polyline points="16 3 21 8 16 13"/><line x1="21" y1="8" x2="9" y2="8"/><polyline points="8 21 3 16 8 11"/><line x1="3" y1="16" x2="15" y2="16"/></svg></button>
+                <a href="dashboard.html" class="action-icon" aria-label="Dashboard" title="Dashboard">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                    </svg>
+                </a>
+                <a href="login.html" class="btn btn-primary" style="height: 44px; padding: 0 20px;">Login</a>
+                <button class="mobile-menu-toggle action-icon" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner with Background Image -->
+    <section class="page-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');">
+        <div class="page-hero-overlay"></div>
+        <div class="container text-center fade-up">
+            <div class="badge-premium">
+                <div class="badge-pulse"></div>
+                High-Yield Competitive Syllabus
+            </div>
+            <h1>Expert Prep Courses <span class="text-highlight">&amp; Mock Reviews</span></h1>
+            <p class="subheading">Master conceptual basics, detailed reasoning questions, and quantitative shortcuts with structured modules designed by veteran educators.</p>
+            
+            <div class="page-hero-visual">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80" alt="Coaching Courses" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section style="padding: 60px 0 100px;">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card fade-up">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+                        alt="UPSC CSE Prep"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">UPSC Civil Services Masterclass</h3>
+                    <p class="card-text">Comprehensive General Studies, answer writing guidance, and current affairs mock tests to secure your civil service placement.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="card fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                        alt="JEE Math &amp; Science Prep"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">JEE Mains &amp; Advanced Prep</h3>
+                    <p class="card-text">Rigorous physics, chemistry, and mathematics modules designed to crack top-tier engineering entrance ranks.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="card fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+                        alt="NEET Biology &amp; Physics Prep"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">NEET Medical Prep</h3>
+                    <p class="card-text">Targeted biology concept walkthroughs, organic chemistry guides, and physics drills to score high on your medical boards.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="card fade-up">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80"
+                        alt="SSC CGL Quant &amp; reasoning"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">SSC CGL Achievers Plan</h3>
+                    <p class="card-text">Focused quantitative aptitude drills, English grammar modules, and logical reasoning shortcuts for government selection.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="card fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
+                        alt="IBPS PO Prep"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">Banking &amp; IBPS Prelims Prep</h3>
+                    <p class="card-text">Advanced data interpretation, logical sequencing, and banking awareness modules to clear IBPS and SBI PO exams.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="card fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+                        alt="Aptitude &amp; Logic Drills"
+                        style="margin-bottom: 24px; height: 240px; width: 100%; object-fit: cover; border-radius: 12px;">
+                    <h3 class="card-title">Quantitative Aptitude &amp; DI</h3>
+                    <p class="card-text">Aptitude shortcuts, speed math calculation techniques, and data interpretation exercises to eliminate score leakage.</p>
+                    <div class="card-actions">
+                        <a href="study-packages.html" class="btn btn-secondary">Explore Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Course Process (Ultra Premium) -->
+    <style>
+        .premium-process-wrap {
+            background: var(--secondary-bg);
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0;
+            color: var(--text-primary);
+        }
+
+        /* Glowing Orbs for background */
+        .process-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.5;
+            z-index: 0;
+            animation: float-glow 10s infinite alternate;
+        }
+
+        .glow-1 {
+            top: -10%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(180, 68, 70, 0.15);
+        }
+
+        .glow-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(180, 68, 70, 0.1);
+        }
+
+        @keyframes float-glow {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(50px, 50px) scale(1.1);
+            }
+        }
+
+        .process-cards-container {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 80px;
+        }
+
+        .premium-step-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 48px 32px;
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+        }
+
+        .premium-step-card:hover {
+            border-color: var(--primary-accent);
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Massive Background Number */
+        .step-bg-num {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            font-size: 60px;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--primary-accent);
+            opacity: 0.3;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            pointer-events: none;
+        }
+
+        .premium-step-card:hover .step-bg-num {
+            opacity: 0.6;
+            transform: scale(1.05) translate(-4px, 4px);
+        }
+
+        .step-progress-bar {
+            height: 4px;
+            width: 0%;
+            background: var(--primary-accent);
+            border-radius: 4px;
+            transition: width 0.6s ease;
+        }
+
+        .premium-step-card:hover .step-progress-bar {
+            width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            .process-cards-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blueprint-header {
+                justify-content: center !important;
+                text-align: center !important;
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .blueprint-header>div,
+            .blueprint-header p {
+                max-width: 100% !important;
+                text-align: center !important;
+            }
+        }
+
+        .masterclass-title {
+            font-size: 48px;
+        }
+
+        @media (max-width: 640px) {
+            .process-cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            .masterclass-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+
+    <section class="premium-process-wrap">
+        <div class="process-glow glow-1"></div>
+        <div class="process-glow glow-2"></div>
+
+        <div class="container fade-up" style="position: relative; z-index: 2;">
+            <div class="blueprint-header"
+                style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
+                <div style="max-width: 600px;">
+                    <div
+                        style="color: var(--primary-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; margin-bottom: 16px;">
+                        The Coaching Blueprint</div>
+                    <h2 class="masterclass-title" style="line-height: 1.1; margin: 0; color: var(--text-primary);">A
+                        masterclass in <br><span style="color: var(--text-secondary);">data-driven prep.</span></h2>
+                </div>
+                <p
+                    style="color: var(--text-secondary); max-width: 400px; margin: 0; font-size: 16px; line-height: 1.6;">
+                    We have engineered a completely personalized study blueprint that systematically targets your
+                    conceptual knowledge gaps and test anxiety.
+                </p>
+            </div>
+
+            <div class="process-cards-container">
+                <!-- Step 1 -->
+                <div class="premium-step-card fade-up">
+                    <div class="step-bg-num">01</div>
+                    <div>
+                        <div
+                            style="width: 12px; height: 12px; background: var(--primary-accent); border-radius: 50%; margin-bottom: 24px; box-shadow: 0 0 15px var(--primary-accent);">
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 16px; color: var(--text-primary); min-height: 64px;">
+                            Diagnostic Assessment</h3>
+                        <p style="color: var(--text-secondary); font-size: 15px; margin: 0; line-height: 1.6;">Sit for
+                            an intensive diagnostic simulation to baseline your performance across all core exam subjects.</p>
+                    </div>
+                    <div
+                        style="margin-top: 32px; background: var(--border-color); height: 4px; border-radius: 4px; overflow: hidden;">
+                        <div class="step-progress-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="premium-step-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="step-bg-num">02</div>
+                    <div>
+                        <div
+                            style="width: 12px; height: 12px; background: var(--text-secondary); border-radius: 50%; margin-bottom: 24px;">
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 16px; color: var(--text-primary); min-height: 64px;">
+                            Custom Study Plan</h3>
+                        <p style="color: var(--text-secondary); font-size: 15px; margin: 0; line-height: 1.6;">We
+                            auto-generate a structured daily study track based on your test date, helping you organize
+                            preparation topics.</p>
+                    </div>
+                    <div
+                        style="margin-top: 32px; background: var(--border-color); height: 4px; border-radius: 4px; overflow: hidden;">
+                        <div class="step-progress-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="premium-step-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="step-bg-num">03</div>
+                    <div>
+                        <div
+                            style="width: 12px; height: 12px; background: var(--text-secondary); border-radius: 50%; margin-bottom: 24px;">
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 16px; color: var(--text-primary); min-height: 64px;">
+                            Weak Topic Drills</h3>
+                        <p style="color: var(--text-secondary); font-size: 15px; margin: 0; line-height: 1.6;">Focus drills specifically in your lowest scoring subtopics, supported by detailed rationales and mentor chats.</p>
+                    </div>
+                    <div
+                        style="margin-top: 32px; background: var(--border-color); height: 4px; border-radius: 4px; overflow: hidden;">
+                        <div class="step-progress-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="premium-step-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="step-bg-num">04</div>
+                    <div>
+                        <div
+                            style="width: 12px; height: 12px; background: var(--text-secondary); border-radius: 50%; margin-bottom: 24px;">
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 16px; color: var(--text-primary); min-height: 64px;">
+                            Adaptive Simulations</h3>
+                        <p style="color: var(--text-secondary); font-size: 15px; margin: 0; line-height: 1.6;">Complete full-length adaptive mock exams to test endurance and verify score readiness prior to test day.</p>
+                    </div>
+                    <div
+                        style="margin-top: 32px; background: var(--border-color); height: 4px; border-radius: 4px; overflow: hidden;">
+                        <div class="step-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Premium Guarantee Banner -->
+    <section class="premium-section"
+        style="padding: 80px 0; background: var(--primary-bg); color: var(--text-primary); text-align: center;">
+        <div class="container fade-up">
+            <h2 style="font-size: 36px; margin-bottom: 24px;">The Coaching Success Guarantee</h2>
+            <p style="color: var(--text-secondary); font-size: 18px; max-width: 700px; margin: 0 auto 40px;">We are confident in our study methodologies. If you complete your customized study plan and do not pass your competitive exam cutoff, we will provide a full refund of your subscription fee and support you for free until you do.</p>
+            <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="color: var(--highlight-accent); font-size: 24px;">✓</div>
+                    <span style="font-weight: 600;">100% Success Guarantee</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="color: var(--highlight-accent); font-size: 24px;">✓</div>
+                    <span style="font-weight: 600;">No Hidden Renewals</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="color: var(--highlight-accent); font-size: 24px;">✓</div>
+                    <span style="font-weight: 600;">Mentor Access Included</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Final Call to Action -->
+    <section class="premium-section" style="padding: 80px 0; background: var(--primary-bg);">
+        <div class="container fade-up text-center">
+            <div class="cta-anxiety-card">
+                <h2 style="font-size: 32px; margin-bottom: 16px;">Ready to conquer exam anxiety?</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">Schedule a free 15-minute diagnostic walkthrough with a senior exam mentor.</p>
+                <style>
+                    .cta-btn {
+                        min-width: 240px;
+                        justify-content: center;
+                    }
+
+                    @media (max-width: 640px) {
+                        .cta-btn {
+                            width: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                </style>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary cta-btn"
+                        style="height: 56px; padding: 0 40px; font-size: 16px;">Schedule Walkthrough</a>
+                    <a href="study-packages.html" class="btn btn-secondary cta-btn"
+                        style="height: 56px; padding: 0 40px; font-size: 16px;">Compare Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid-4">
+                <div class="footer-widget">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px; display: inline-flex;">
+                        <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                        <span>Coaching<span class="brand-accent"></span></span>
+                    </a>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Empowering future specialists to conquer high-stakes competitive exams with absolute confidence.</p>
+                    <div class="social-icons-contact" style="display: flex; gap: 12px;">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h4>Prep Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="study-packages.html">Study Packages</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Support Portal</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Student Login</a></li>
+                        <li><a href="register.html">Create Account</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1-800-555-COACH</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>support@coachingprep.com</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>500 Scholar Way, Education Hub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="justify-content: center; text-align: center;">
+                <p>&copy; 2026 Coaching. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

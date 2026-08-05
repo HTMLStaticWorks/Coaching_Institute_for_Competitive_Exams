@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Coaching</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                <span>Coaching<span class="brand-accent"></span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="study-packages.html">Packages</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="action-icon" aria-label="Toggle Dark Mode"
+                    title="Toggle Dark Mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button id="rtlToggle" class="action-icon" aria-label="Toggle RTL" title="Toggle RTL"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><polyline points="16 3 21 8 16 13"/><line x1="21" y1="8" x2="9" y2="8"/><polyline points="8 21 3 16 8 11"/><line x1="3" y1="16" x2="15" y2="16"/></svg></button>
+                <a href="dashboard.html" class="action-icon" aria-label="Dashboard" title="Dashboard">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                    </svg>
+                </a>
+                <a href="login.html" class="btn btn-primary" style="height: 44px; padding: 0 20px;">Login</a>
+                <button class="mobile-menu-toggle action-icon" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner with Background Image -->
+    <section class="page-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80');">
+        <div class="page-hero-overlay"></div>
+        <div class="container text-center fade-up">
+            <div class="badge-premium">
+                <div class="badge-pulse"></div>
+                24/7 Academic Support & Mentorship
+            </div>
+            <h1>We Are Here <span class="text-highlight">For Your Exam Prep Journey</span></h1>
+            <p class="subheading">Have questions about study packages, mock tests, or custom schedules? Our
+                academic mentors and support team are standing by.</p>
+            
+            <div class="page-hero-visual">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80" alt="Coaching Contact" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="grid-2">
+                <div class="fade-up">
+                    <h2 style="margin-bottom: 32px;">Send Us a Message</h2>
+                    <form style="width: 100%; text-align: left;">
+                        <div class="grid-2 name-fields-grid" style="gap: 24px;">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Target Exam</label>
+                            <select class="form-control">
+                                <option>UPSC Civil Services General Studies</option>
+                                <option>IIT-JEE Mains &amp; Advanced Prep</option>
+                                <option>NEET Medical Entrance Preparation</option>
+                                <option>SSC CGL Government Exams Prep</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5"
+                                placeholder="Tell us about your testing schedule..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                <div class="fade-up" style="transition-delay: 0.2s;">
+                    <div style="background: var(--secondary-bg); padding: 40px; border-radius: 24px; height: 100%;">
+                        <h3 style="margin-bottom: 32px;">Contact Information</h3>
+                        <div class="contact-info-item">
+                            <div style="width: 44px; height: 44px; background: rgba(180,68,70,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0; margin-top: 4px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p style="color: var(--text-secondary);">500 Scholar Way, Education District<br>Boston,
+                                    MA 02115</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div style="width: 44px; height: 44px; background: rgba(180,68,70,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0; margin-top: 4px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p style="color: var(--text-secondary);">
+                                    support@coachingprep.com<br>admissions@coachingprep.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div style="width: 44px; height: 44px; background: rgba(180,68,70,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0; margin-top: 4px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p style="color: var(--text-secondary);">+1 (800) 555-COACH<br>Mon-Fri 8am - 8pm EST</p>
+                            </div>
+                        </div>
+                        <style>
+                            .contact-info-item {
+                                display: flex;
+                                gap: 16px;
+                                margin-bottom: 32px;
+                            }
+
+                            @media (max-width: 992px) {
+                                .contact-info-item {
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+
+                                .name-fields-grid {
+                                    grid-template-columns: 1fr;
+                                }
+                            }
+
+                            .social-icons-contact a {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 44px;
+                                height: 44px;
+                                background: var(--card-bg);
+                                border: 1px solid var(--border-color);
+                                border-radius: 50%;
+                                color: var(--text-secondary);
+                                transition: all 0.3s ease;
+                            }
+
+                            .social-icons-contact a:hover {
+                                background: var(--primary-accent);
+                                color: white;
+                                border-color: var(--primary-accent);
+                                transform: translateY(-3px);
+                            }
+                        </style>
+                        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 32px 0;">
+                        <div>
+                            <h4 style="margin-bottom: 16px;">Connect With Us</h4>
+                            <div class="social-icons-contact" style="display: flex; gap: 12px;">
+                                <a href="#" aria-label="Facebook">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Map Section -->
+    <section style="padding: 0; line-height: 0; position: relative;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.846505370395!2d-71.1030043845441!3d42.34149867918809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1a45bb3e7f%3A0xc3cf9c4e2db5665!2sBoston%20University!5e0!3m2!1sen!2sus!4v1683134606233!5m2!1sen!2sus"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Study Advisory Support Block -->
+    <section style="padding: 100px 0;">
+        <div class="container fade-up">
+            <div
+                style="background: var(--card-bg); border: 2px solid var(--highlight-accent); padding: 40px; border-radius: 24px; text-align: center; box-shadow: var(--shadow);">
+                <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background: rgba(180,68,70,0.1); border-radius: 50%; margin: 0 auto 24px; color: var(--primary-accent);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10 5z"/><path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/></svg>
+                </div>
+                <h2 style="margin-bottom: 16px;">Need Immediate Study Assistance?</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;">Our tutoring support advisors are
+                    available to guide you.</p>
+                <div style="font-size: 32px; font-weight: 600; color: var(--primary-accent);">1-800-555-COACH</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid-4">
+                <div class="footer-widget">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px; display: inline-flex;">
+                        <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                        <span>Coaching<span class="brand-accent"></span></span>
+                    </a>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Empowering ambitious students to conquer high-stakes competitive exams with absolute confidence.</p>
+                    <div class="social-icons-contact" style="display: flex; gap: 12px;">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h4>Prep Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="study-packages.html">Study Packages</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Support Portal</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Student Login</a></li>
+                        <li><a href="register.html">Create Account</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1-800-555-COACH</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>support@coachingprep.com</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>500 Scholar way, Education District</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="justify-content: center; text-align: center;">
+                <p>&copy; 2026 Coaching Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

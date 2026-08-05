@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching | Competitive Exams Preparation Platform</title>
+    <meta name="description" content="Conquer UPSC, JEE, NEET, SSC, and Banking exams. Data-driven study planning, weak topic tracking, and confidence-building progress metrics for ambitious students.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                <span>Coaching<span class="brand-accent"></span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="home-2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="study-packages.html">Packages</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="action-icon" aria-label="Toggle Dark Mode" title="Toggle Dark Mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button id="rtlToggle" class="action-icon" aria-label="Toggle RTL" title="Toggle RTL"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><polyline points="16 3 21 8 16 13"/><line x1="21" y1="8" x2="9" y2="8"/><polyline points="8 21 3 16 8 11"/><line x1="3" y1="16" x2="15" y2="16"/></svg></button>
+                <a href="dashboard.html" class="action-icon" aria-label="Dashboard" title="Dashboard">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+                </a>
+                <a href="login.html" class="btn btn-primary" style="height: 44px; padding: 0 20px;">Login</a>
+                <button class="mobile-menu-toggle action-icon" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium SaaS Hero -->
+    <section class="hero-premium hero-has-bg" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80');">
+        <!-- Dark overlay (hidden on 360px, visible on 768px+) -->
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <div class="hero-premium-grid">
+                
+                <!-- Left Content: 55% -->
+                <div class="hero-premium-content fade-up">
+                    <div class="badge-premium">
+                        <div class="badge-pulse"></div>
+                        Confidence-Building Exam Prep
+                    </div>
+                    
+                    <h1>
+                        Conquer Competitive Exams<br>
+                        <span class="text-highlight">With Absolute Confidence</span>
+                    </h1>
+                    
+                    <p class="subheading" style="transition-delay: 0.1s;">
+                        Overcome exam anxiety using adaptive mock tests, tracking your weak topic areas in real time, and studying with expert educator plans.
+                    </p>
+                    
+                    <div class="hero-premium-actions" style="transition-delay: 0.2s;">
+                        <a href="dashboard.html" class="btn btn-primary" style="height: 56px; padding: 0 32px; font-size: 16px;">Go to Dashboard</a>
+                        <a href="study-packages.html" class="btn btn-glass" style="height: 56px; padding: 0 32px; font-size: 16px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50px; text-decoration: none; font-weight: 500;">Explore Packages</a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: 45% -->
+                <div class="hero-premium-visual fade-up" style="transition-delay: 0.2s;">
+                    <div class="hero-image-card">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80" alt="Coaching Prep Platform" class="img-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Rigorous Prep Vetting -->
+    <section class="premium-section" style="padding: 100px 0; overflow: hidden;">
+        <div class="container">
+            <div class="grid-2 tab-stack image-first" style="align-items: center; gap: 64px;">
+                <!-- Image Side -->
+                <div class="fade-up" style="position: relative;">
+                    <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-hover);">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80" alt="Verified Toppers & Educators" class="img-cover" style="height: 500px; transform: scale(1.02); transition: var(--transition);">
+                    </div>
+                    <!-- Glassmorphism Badge -->
+                    <div class="floating-badge-right" style="position: absolute; bottom: 32px; right: -32px; background: var(--card-bg); border: 1px solid var(--border-color); padding: 24px; border-radius: 20px; box-shadow: var(--shadow-hover); max-width: 240px; z-index: 2;">
+                        <div style="color: var(--primary-accent); font-size: 32px; font-weight: 700; line-height: 1;">100%</div>
+                        <div style="font-weight: 600; color: var(--text-primary); margin-top: 8px;">Exam Aligned</div>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-top: 4px; margin-bottom: 0;">Verified curriculum & IIT/UPSC mentor plans.</p>
+                    </div>
+                </div>
+                <!-- Content Side -->
+                <div class="fade-up" style="transition-delay: 0.2s;">
+                    <div class="badge-premium" style="margin-bottom: 16px;">Security & Trust</div>
+                    <h2 style="font-size: 40px; line-height: 1.2; margin-bottom: 24px;">Rigorous Standards For Your <span class="text-highlight">Exam Success</span></h2>
+                    <p class="subheading" style="margin-bottom: 32px;">We don't just compile practice questions; we curate exam-aligned materials reviewed by senior educators. Our quality protocol ensures competitive readiness.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--secondary-bg); color: var(--primary-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px; margin-bottom: 4px;">Exam-Aligned Question Quality</h4>
+                                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Rationales matching the cognitive demand of the official national competitive guidelines.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--secondary-bg); color: var(--primary-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px; margin-bottom: 4px;">Verified Educator Credentials</h4>
+                                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Every mock review and tutoring resource is structured by IIT, IIM, and exam-topper experts.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--secondary-bg); color: var(--primary-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/><path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z"/></svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px; margin-bottom: 4px;">Result-Focused Ranks</h4>
+                                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Developing testing strategies and focus habits to turn exam fear into high percentiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Bespoke Study Packages -->
+    <section class="premium-section bg-secondary" style="padding: 100px 0; position: relative;">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <div class="badge-premium" style="margin-bottom: 16px; margin-left: auto; margin-right: auto;">Prep Options</div>
+                <h2 style="font-size: 40px;">Tailored Exam Prep Solutions</h2>
+                <p class="subheading" style="margin-left: auto; margin-right: auto; max-width: 600px;">Explore study suites designed to fit your learning speed and help you confidently crack your competitive exams.</p>
+            </div>
+            
+            <div class="grid-2 prep-options-grid" style="gap: 40px; margin-top: 64px; align-items: center;">
+                <!-- Left: Stacked Premium Cards -->
+                <div class="prep-options-cards" style="display: flex; flex-direction: column; gap: 24px;">
+                    <div class="card fade-up" style="border-left: 4px solid var(--primary-accent); padding: 32px; transition: var(--transition);">
+                        <h3 style="font-size: 24px; margin-bottom: 12px;">UPSC &amp; Civil Services Prep</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;">High-yield rationales and next-gen case studies to ensure a confident, rapid pathway to passing the Civil Services exam.</p>
+                        <a href="study-packages.html" style="color: var(--primary-accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Explore Package</a>
+                    </div>
+                    <div class="card fade-up" style="border-left: 4px solid var(--support-accent); padding: 32px; transition: var(--transition); transition-delay: 0.1s;">
+                        <h3 style="font-size: 24px; margin-bottom: 12px;">JEE &amp; NEET Prime Review</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;">Focused math, physics, chemistry, and biology reviews to assist engineering &amp; medical aspirants in cracking entrance boards.</p>
+                        <a href="study-packages.html" style="color: var(--primary-accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Explore Package</a>
+                    </div>
+                    <div class="card fade-up" style="border-left: 4px solid var(--highlight-accent); padding: 32px; transition: var(--transition); transition-delay: 0.2s;">
+                        <h3 style="font-size: 24px; margin-bottom: 12px;">SSC &amp; Banking Booster</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;">Strategic aptitude tutorials and reasoning reviews to help students score in top percentiles on job placement diagnostics.</p>
+                        <a href="study-packages.html" style="color: var(--primary-accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Explore Package</a>
+                    </div>
+                </div>
+                
+                <!-- Right: Large Image -->
+                <div class="fade-up prep-options-image" style="height: 100%; transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Student Studying" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; box-shadow: var(--shadow-hover); min-height: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials -->
+    <section class="bg-secondary">
+        <div class="container text-center fade-up">
+            <div class="section-header">
+                <h2>Trusted By Top Rankers</h2>
+                <p class="subheading">Hear from the students who successfully navigated competitive exams using our analytics.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="align-items: center; text-align: center; display: flex; flex-direction: column;">
+                    <div style="color: var(--highlight-accent); font-size: 24px; margin-bottom: 16px;">★★★★★</div>
+                    <p class="card-text" style="flex-grow: 1;">"My test anxiety was paralyzing. The weak-topic analysis highlighted exactly where I was failing (Quantitative Aptitude - Probability), helping me review and clear SSC CGL on my first try!"</p>
+                    <div style="margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--secondary-bg); display: flex; align-items: center; justify-content: center; color: var(--primary-accent); border: 2px solid var(--border-color); flex-shrink: 0;">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=7C3AED&color=fff" alt="Sarah Jenkins" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: left;">
+                            <h4 style="font-size: 18px; margin-bottom: 4px;">Sarah Jenkins</h4>
+                            <span style="color: var(--text-secondary); font-size: 14px;">SSC CGL Topper</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="align-items: center; text-align: center; display: flex; flex-direction: column;">
+                    <div style="color: var(--highlight-accent); font-size: 24px; margin-bottom: 16px;">★★★★★</div>
+                    <p class="card-text" style="flex-grow: 1;">"The predictive mock exams matched the JEE Advanced format perfectly. The accuracy trends dashboard showed me exactly when my scores were in the safe zone."</p>
+                    <div style="margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--secondary-bg); display: flex; align-items: center; justify-content: center; color: var(--primary-accent); border: 2px solid var(--border-color); flex-shrink: 0;">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Torres&background=7C3AED&color=fff" alt="Michael Torres" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: left;">
+                            <h4 style="font-size: 18px; margin-bottom: 4px;">Michael Torres</h4>
+                            <span style="color: var(--text-secondary); font-size: 14px;">IIT JEE Ranker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="align-items: center; text-align: center; display: flex; flex-direction: column;">
+                    <div style="color: var(--highlight-accent); font-size: 24px; margin-bottom: 16px;">★★★★★</div>
+                    <p class="card-text" style="flex-grow: 1;">"Coaching broke down complex physical chemistry topics into clear, bite-sized quizzes. The confidence-building metrics are a game changer."</p>
+                    <div style="margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--secondary-bg); display: flex; align-items: center; justify-content: center; color: var(--primary-accent); border: 2px solid var(--border-color); flex-shrink: 0;">
+                            <img src="https://ui-avatars.com/api/?name=Emily+Chen&background=7C3AED&color=fff" alt="Emily Chen" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: left;">
+                            <h4 style="font-size: 18px; margin-bottom: 4px;">Emily Chen</h4>
+                            <span style="color: var(--text-secondary); font-size: 14px;">NEET Aspirant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Next-Gen Study Portal (Dark Mode Section) -->
+    <section class="premium-section" style="padding: 100px 0; background: #1B0B0C; color: #FFFFFF; position: relative; overflow: hidden;">
+        <!-- Glowing Orb Background Effect -->
+        <div style="position: absolute; top: -20%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(180, 68, 70, 0.15) 0%, rgba(27, 11, 12, 0) 70%); border-radius: 50%; z-index: 0;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="grid-2 tab-stack" style="align-items: center; gap: 80px;">
+                
+                <!-- Content Side -->
+                <div class="fade-up">
+                    <div class="badge-premium" style="margin-bottom: 16px; background: rgba(255,255,255,0.1); color: #FC8F8F; border-color: rgba(252,143,143,0.3);">Real-Time Progress</div>
+                    <h2 style="font-size: 40px; line-height: 1.2; margin-bottom: 24px; color: #FFFFFF;">Stay on Track with the <span style="color: #FC8F8F;">Student Portal</span></h2>
+                    <p style="color: #DFD9D8; font-size: 18px; line-height: 1.6; margin-bottom: 40px;">Never guess if you're ready. Our proprietary digital dashboard allows students to monitor accuracy trends, review detailed question rationales, and message tutors in real-time, from anywhere.</p>
+                    
+                    <div style="display: flex; gap: 32px; margin-bottom: 48px;">
+                        <div>
+                            <div style="font-size: 32px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">24/7</div>
+                            <div style="color: #DFD9D8; font-size: 14px;">Expert Support</div>
+                        </div>
+                        <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
+                        <div>
+                            <div style="font-size: 32px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">100%</div>
+                            <div style="color: #DFD9D8; font-size: 14px;">Exam Aligned</div>
+                        </div>
+                    </div>
+                    
+                    <a href="dashboard.html" class="btn btn-primary" style="background: #B44446; border-color: #B44446; color: #FFFFFF; font-weight: 600; padding: 0 32px; height: 56px;">Explore The Dashboard</a>
+                </div>
+
+                <!-- Visual Side -->
+                <div class="fade-up" style="position: relative; transition-delay: 0.2s;">
+                    <img src="assets/images/digital_care_portal.png" alt="Student Progress Portal" style="width: 100%; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+                    
+                    <!-- Floating UI Element -->
+                    <div class="floating-badge-left" style="position: absolute; bottom: 40px; left: -32px; background: rgba(15,12,27,0.85); backdrop-filter: blur(16px); padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+                        <div style="width: 12px; height: 12px; background: #F59E0B; border-radius: 50%; box-shadow: 0 0 10px rgba(245,158,11,0.5);"></div>
+                        <div>
+                            <div style="color: #FFFFFF; font-weight: 600; font-size: 14px;">Scores Graded</div>
+                            <div style="color: #DFD9D8; font-size: 12px;">Mock Exam #3 graded by Amit Sharma, Senior Math Coach</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Transparent Pricing & Value -->
+    <section class="premium-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="grid-2 tab-stack" style="align-items: center; gap: 64px;">
+                <!-- Content Side -->
+                <div class="fade-up">
+                    <div class="badge-premium" style="margin-bottom: 16px;">Transparent Plans</div>
+                    <h2 style="font-size: 40px; line-height: 1.2; margin-bottom: 24px;">Comprehensive Prep.<br><span class="text-highlight">No Hidden Fees.</span></h2>
+                    <p class="subheading" style="margin-bottom: 32px;">We believe in honest subscriptions. Select the plan that matches your study timeline and gain instant dashboard access to master your exam.</p>
+                    
+                    <div class="grid-2" style="gap: 24px; margin-bottom: 40px;">
+                        <div style="background: var(--secondary-bg); padding: 24px; border-radius: 16px;">
+                            <h4 style="font-size: 18px; margin-bottom: 8px;">Flat Subscriptions</h4>
+                            <p style="color: var(--text-secondary); font-size: 14px; margin: 0;">Fixed rates with unlimited quiz generation and dashboard analytics.</p>
+                        </div>
+                        <div style="background: var(--secondary-bg); padding: 24px; border-radius: 16px;">
+                            <h4 style="font-size: 18px; margin-bottom: 8px;">Pass Guarantee Plans</h4>
+                            <p style="color: var(--text-secondary); font-size: 14px; margin: 0;">Full reimbursement if you follow our plan and do not pass your exam cutoff.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="pricing.html" class="btn btn-primary" style="height: 56px; padding: 0 32px; font-size: 16px;">View Subscription Pricing</a>
+                </div>
+                
+                <!-- Image Side -->
+                <div class="fade-up" style="position: relative; transition-delay: 0.2s;">
+                    <img src="https://www.famu.edu/students/student-financial-services/img/Payment_In_Person_640x480.jpg" alt="Student Studying Review" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-hover);">
+                    
+                    <!-- Floating Guarantee Card -->
+                    <div style="position: absolute; top: -20px; left: -20px; background: var(--card-bg); padding: 24px; border-radius: 20px; box-shadow: var(--shadow-hover); border: 1px solid var(--border-color); display: flex; align-items: center; gap: 16px; z-index: 2;">
+                        <div style="width: 48px; height: 48px; background: #FFF4E5; color: #E65100; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">★</div>
+                        <div>
+                            <div style="font-weight: 700; color: var(--text-primary);">Success Guarantee</div>
+                            <div style="color: var(--text-secondary); font-size: 13px;">On competitive exam cutoffs.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid-4">
+                <div class="footer-widget">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px; display: inline-flex;">
+                        <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                        <span>Coaching<span class="brand-accent"></span></span>
+                    </a>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Empowering future specialists to conquer high-stakes competitive exams with absolute confidence.</p>
+                    <div class="social-icons-contact" style="display: flex; gap: 12px;">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h4>Prep Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="study-packages.html">Study Packages</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Support Portal</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Student Login</a></li>
+                        <li><a href="register.html">Create Account</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1-800-555-COACH</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>support@coachingprep.com</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>500 Scholar Way, Education Hub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="justify-content: center; text-align: center;">
+                <p>&copy; 2026 Coaching. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

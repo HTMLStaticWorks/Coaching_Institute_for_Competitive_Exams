@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Coaching</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                <span>Coaching<span class="brand-accent"></span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="study-packages.html">Packages</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="action-icon" aria-label="Toggle Dark Mode"
+                    title="Toggle Dark Mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button id="rtlToggle" class="action-icon" aria-label="Toggle RTL" title="Toggle RTL"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><polyline points="16 3 21 8 16 13"/><line x1="21" y1="8" x2="9" y2="8"/><polyline points="8 21 3 16 8 11"/><line x1="3" y1="16" x2="15" y2="16"/></svg></button>
+                <a href="dashboard.html" class="action-icon" aria-label="Dashboard" title="Dashboard">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                    </svg>
+                </a>
+                <a href="login.html" class="btn btn-primary" style="height: 44px; padding: 0 20px;">Login</a>
+                <button class="mobile-menu-toggle action-icon" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner with Background Image -->
+    <section class="page-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=80');">
+        <div class="page-hero-overlay"></div>
+        <div class="container text-center fade-up">
+            <div class="badge-premium">
+                <div class="badge-pulse"></div>
+                Transparent Student Pricing
+            </div>
+            <h1>Simple & Transparent <span class="text-highlight">Subscription Plans</span></h1>
+            <p class="subheading">No hidden hourly fees or contracts. Choose the study plan that matches your exam
+                timeline and unlock instant 24/7 access to all practice question banks.</p>
+            
+            <div class="page-hero-visual">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=80" alt="Coaching Pricing" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Grid -->
+    <section>
+        <div class="container fade-up text-center">
+            <div class="grid-3" style="text-align: left;">
+                <div class="card">
+                    <h3 style="font-size: 24px; color: var(--text-primary);">Basic Practice</h3>
+                    <div style="font-size: 48px; font-weight: 600; color: var(--text-primary); margin: 16px 0;">$49<span
+                            style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">/mo</span></div>
+                    <p class="card-text" style="min-height: 40px;">Essential practice quizzes and rationales for
+                        independent study.</p>
+                    <ul
+                        style="list-style: none; margin-bottom: 32px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+                        <li style="margin-bottom: 12px;">✓ 1000+ board-style questions</li>
+                        <li style="margin-bottom: 12px;">✓ Custom study calendar</li>
+                        <li style="margin-bottom: 12px;">✓ Standard Q&amp;A forum</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Select Plan</a>
+                </div>
+                <div class="card"
+                    style="border-color: var(--primary-accent); box-shadow: var(--shadow-hover); transform: translateY(-8px);">
+                    <div class="badge" style="position: absolute; top: -16px; left: 50%; transform: translateX(-50%);">
+                        Most Popular</div>
+                    <h3 style="font-size: 24px; color: var(--text-primary);">Premium Prep</h3>
+                    <div style="font-size: 48px; font-weight: 600; color: var(--text-primary); margin: 16px 0;">$89<span
+                            style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">/mo</span></div>
+                    <p class="card-text" style="min-height: 40px;">Complete metrics dashboard, mock diagnostics, and
+                        tutor chat.</p>
+                    <ul
+                        style="list-style: none; margin-bottom: 32px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+                        <li style="margin-bottom: 12px;">✓ 2000+ questions &amp; NGN cases</li>
+                        <li style="margin-bottom: 12px;">✓ Weak topic tracking alerts</li>
+                        <li style="margin-bottom: 12px;">✓ 24/7 direct tutor chat support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Select Plan</a>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 24px; color: var(--text-primary);">Mentorship Suite</h3>
+                    <div style="font-size: 48px; font-weight: 600; color: var(--text-primary); margin: 16px 0;">
+                        $149<span style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">/mo</span>
+                    </div>
+                    <p class="card-text" style="min-height: 40px;">1-on-1 clinical reviews and money-back pass
+                        guarantee.</p>
+                    <ul
+                        style="list-style: none; margin-bottom: 32px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+                        <li style="margin-bottom: 12px;">✓ Unlimited simulated mock exams</li>
+                        <li style="margin-bottom: 12px;">✓ 1-on-1 review video calls</li>
+                        <li style="margin-bottom: 12px;">✓ Guaranteed pass or 100% refund</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 1: Pricing Value Guarantee -->
+    <style>
+        .value-section {
+            padding: 100px 0;
+            background: var(--primary-bg);
+            position: relative;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .value-img-col {
+            position: relative;
+        }
+
+        .value-img-col img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .value-content-col {
+            background: var(--card-bg);
+            padding: 64px;
+            border-radius: 24px;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-list {
+            list-style: none;
+            padding: 0;
+            margin: 32px 0 0;
+        }
+
+        .value-list li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text-primary);
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .value-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .value-check {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 992px) {
+            .value-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .value-img-col {
+                padding-right: 0;
+            }
+
+            .value-content-col {
+                margin-left: 0;
+                padding: 32px;
+            }
+        }
+    </style>
+    <section class="value-section">
+        <div class="container fade-up">
+            <div class="value-grid">
+                <div class="value-img-col fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://www.bartonassociates.com/wp-content/uploads/2017/03/Blog-Twitter-Facebook-1080x1080-2024-05-23T101111.816.jpg"
+                        alt="Coaching Pricing Agreement">
+                </div>
+                <div class="value-content-col fade-up" style="transition-delay: 0.3s;">
+                    <div class="badge-premium" style="margin-bottom: 16px;">The Coaching Guarantee</div>
+                    <h2 style="font-size: 36px; margin-bottom: 16px;">Beyond the <span
+                            style="color: var(--primary-accent);">Monthly Cost</span></h2>
+                    <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6;">When you prepare with
+                        our Coaching Platform, you are securing a verified pathway to exam success. We back your dedication with actual
+                        risk removal.</p>
+
+                    <ul class="value-list">
+                        <li>
+                            <div class="value-check">✓</div>
+                            Zero Hidden Setup Fees
+                        </li>
+                        <li>
+                            <div class="value-check">✓</div>
+                            Cancel Online Instantly Anytime
+                        </li>
+                        <li>
+                            <div class="value-check">✓</div>
+                            Free Entrance Diagnostic Quiz
+                        </li>
+                        <li>
+                            <div class="value-check">✓</div>
+                            Full Student Analytics Dashboard
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Funding & Cohorts -->
+    <style>
+        .funding-section {
+            padding: 120px 0;
+            background: #1B0B0C;
+            color: white;
+        }
+
+        .funding-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 64px;
+        }
+
+        .funding-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 40px 32px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .funding-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(180, 68, 70, 0.15) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .funding-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(180, 68, 70, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .funding-card:hover::before {
+            opacity: 1;
+        }
+
+        .funding-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(180, 68, 70, 0.15);
+            color: #FC8F8F;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .funding-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 992px) {
+            .funding-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .funding-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <section class="funding-section">
+        <div class="container fade-up">
+            <div class="section-header text-center" style="max-width: 600px; margin: 0 auto;">
+                <h2 style="font-size: 40px; color: white;">Ways to Fund Your Prep</h2>
+                <p style="color: rgba(255,255,255,0.6); font-size: 18px;">We work with institutions and student cohorts
+                    to provide flexible, affordable preparation pathways.</p>
+            </div>
+
+            <div class="funding-grid">
+                <div class="funding-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="funding-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="funding-content">
+                        <h3 style="color: white; font-size: 20px; margin-bottom: 12px;">Institutional Partnerships</h3>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 15px; margin: 0; line-height: 1.6;">Many
+                            academic institutions fully sponsor or reimburse student subscriptions. Check with your
+                            department.</p>
+                    </div>
+                </div>
+                <div class="funding-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="funding-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </div>
+                    <div class="funding-content">
+                        <h3 style="color: white; font-size: 20px; margin-bottom: 12px;">Cohort Discounts</h3>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 15px; margin: 0; line-height: 1.6;">Preparing
+                            with friends? Get up to 25% discount when signing up as a student cohort of 5 or more.</p>
+                    </div>
+                </div>
+                <div class="funding-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="funding-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10 5z"/><path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/></svg>
+                    </div>
+                    <div class="funding-content">
+                        <h3 style="color: white; font-size: 20px; margin-bottom: 12px;">Tax-Deductible Education</h3>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 15px; margin: 0; line-height: 1.6;">Our
+                            invoices contain certified educational codes, making them eligible for tuition tax credits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-secondary">
+        <div class="container fade-up">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <style>
+                .faq-item {
+                    background: var(--card-bg);
+                    border: 1px solid var(--border-color);
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                }
+
+                .faq-item:hover {
+                    border-color: var(--primary-accent);
+                }
+
+                .faq-item summary {
+                    padding: 24px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    list-style: none;
+                    position: relative;
+                    color: var(--text-primary);
+                    outline: none;
+                }
+
+                .faq-item summary::-webkit-details-marker {
+                    display: none;
+                }
+
+                .faq-item summary::after {
+                    content: '+';
+                    position: absolute;
+                    right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 24px;
+                    color: var(--primary-accent);
+                    transition: transform 0.3s ease;
+                }
+
+                .faq-item[open] summary::after {
+                    content: '−';
+                    transform: translateY(-50%) rotate(180deg);
+                }
+
+                .faq-content {
+                    padding: 0 24px 24px;
+                    color: var(--text-secondary);
+                    line-height: 1.6;
+                }
+            </style>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <details class="faq-item">
+                    <summary>Can I switch study plans mid-semester?</summary>
+                    <div class="faq-content">
+                        Yes, you can upgrade or downgrade your subscription plan instantly via your student dashboard
+                        account settings. Changes are pro-rated.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How does the Pass Guarantee work?</summary>
+                    <div class="faq-content">
+                        If you complete 90% of your customized study blueprint, sit for all diagnostic mock exams, and
+                        still do not pass your official licensing board, we refund up to 3 months of subscription fees.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How long do I keep dashboard analytics data?</summary>
+                    <div class="faq-content">
+                        You retain dashboard metrics for as long as your membership is active. Once cancelled, your weak
+                        area analytics and historical mock scores are saved for 6 months should you choose to return.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Are the tutors actual verified educators?</summary>
+                    <div class="faq-content">
+                        Absolutely. Every tutor and curriculum planner is a verified educator holding advanced degrees,
+                        ensuring rationales conform to current national competitive exams.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid-4">
+                <div class="footer-widget">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px; display: inline-flex;">
+                        <img src="assets/images/logo.svg" alt="Coaching Logo" class="nav-brand-img">
+                        <span>Coaching<span class="brand-accent"></span></span>
+                    </a>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Empowering ambitious students to conquer high-stakes competitive exams with absolute confidence.</p>
+                    <div class="social-icons-contact" style="display: flex; gap: 12px;">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h4>Prep Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="study-packages.html">Study Packages</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Support Portal</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Student Login</a></li>
+                        <li><a href="register.html">Create Account</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1-800-555-COACH</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>support@coachingprep.com</li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; color: var(--primary-accent);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>500 Scholar way, Education District</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="justify-content: center; text-align: center;">
+                <p>&copy; 2026 Coaching Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

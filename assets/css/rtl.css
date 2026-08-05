@@ -1,0 +1,154 @@
+/* ===========================
+   RTL — Global Direction
+   =========================== */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===========================
+   Dashboard Sidebar
+   =========================== */
+[dir="rtl"] .dashboard-sidebar {
+    border-right: none;
+    border-left: 1px solid var(--border-color);
+    right: 0;
+    left: auto;
+}
+
+/* NOTE: dashboard-content margins in RTL are handled by .dashboard-main-area in dashboard.html */
+/* Do NOT add margin-right: 280px here — it creates a double-offset gap */
+
+/* Nav item active/hover indicator — flip to right side */
+[dir="rtl"] .dashboard-nav li a {
+    border-left: none;
+    border-right: 4px solid transparent;
+    flex-direction: row-reverse; /* icon on the left in RTL */
+}
+
+[dir="rtl"] .dashboard-nav li a:hover,
+[dir="rtl"] .dashboard-nav li a.active {
+    border-left-color: transparent;
+    border-right-color: var(--primary-accent);
+}
+
+/* ===========================
+   Responsive — 1024px
+   =========================== */
+@media (max-width: 1024px) {
+    [dir="rtl"] .dashboard-sidebar {
+        transform: translateX(100%);
+    }
+    [dir="rtl"] .dashboard-sidebar.open {
+        transform: translateX(0);
+    }
+    [dir="rtl"] .dashboard-content {
+        margin-right: 0;
+    }
+}
+
+/* ===========================
+   Table
+   =========================== */
+[dir="rtl"] th,
+[dir="rtl"] td {
+    text-align: right;
+}
+
+/* ===========================
+   Care Team Rows
+   Avatar group flips to RTL order (name first on right, then avatar, then button on far left)
+   =========================== */
+[dir="rtl"] .care-team-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .care-team-info {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .care-team-info > div {
+    text-align: right;
+}
+
+/* ===========================
+   Recent Care Updates rows
+   Icon moves to the right, text block to the left
+   =========================== */
+[dir="rtl"] .care-update-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .care-update-row > div {
+    text-align: right;
+}
+
+/* ===========================
+   Stat Cards (grid-4)
+   Text should be right-aligned
+   =========================== */
+[dir="rtl"] .grid-4 .card,
+[dir="rtl"] .grid-2 .card {
+    text-align: right;
+}
+
+/* ===========================
+   Chat Input Bar
+   =========================== */
+[dir="rtl"] .chat-input-bar {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .chat-send-btn {
+    flex-direction: row-reverse;
+}
+
+/* ===========================
+   Navbar Brand + Actions
+   =========================== */
+[dir="rtl"] .nav-brand {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn i,
+[dir="rtl"] .btn svg {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* ===========================
+   Mobile Nav Menu
+   =========================== */
+@media (max-width: 1024px) {
+    [dir="rtl"] .nav-menu {
+        right: auto;
+        left: 0;
+        transform: translateX(-100%);
+        margin-right: 0;
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    [dir="rtl"] .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    [dir="rtl"] .mobile-close-btn {
+        right: auto;
+        left: 24px;
+    }
+}
+
+/* ===========================
+   Margin utilities
+   =========================== */
+[dir="rtl"] .ml-auto { margin-right: auto; margin-left: 0; }
+[dir="rtl"] .mr-auto { margin-left: auto; margin-right: 0; }
+
+/* ===========================
+   FAQ Items
+   =========================== */
+[dir="rtl"] .faq-item summary::after {
+    right: auto;
+    left: 24px;
+}

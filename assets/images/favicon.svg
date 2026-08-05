@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+  <!-- Cap Diamond (Maroon) -->
+  <path d="M16 3L2 10L16 17L30 10L16 3Z" fill="#64242F"/>
+  <!-- Tassel (Terracotta) -->
+  <path d="M23 13.5V19C23 20.5 21.5 21 20 21" stroke="#B44446" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="20" cy="21" r="2" fill="#B44446"/>
+  <!-- Open Book / Cap Base (Blush Pink) -->
+  <path d="M16 17C12 17 8 19 8 21.5V26.5C8 27.2 10.5 29 16 29C21.5 29 24 27.2 24 26.5V21.5C24 19 20 17 16 17Z" fill="#FC8F8F"/>
+  <path d="M16 17.5V29" stroke="#64242F" stroke-width="2"/>
+</svg>
