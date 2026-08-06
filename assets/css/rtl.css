@@ -119,7 +119,7 @@
 /* ===========================
    Mobile Nav Menu
    =========================== */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     [dir="rtl"] .nav-menu {
         right: auto;
         left: 0;
@@ -151,4 +151,86 @@
 [dir="rtl"] .faq-item summary::after {
     right: auto;
     left: 24px;
+}
+
+/* ===========================
+   RTL Mobile Link Highlights
+   =========================== */
+@media (max-width: 768px) {
+    [dir="rtl"] .nav-links a {
+        padding-left: 0 !important;
+        padding-right: 12px !important;
+        border-left: none !important;
+        border-right: 2px solid transparent !important;
+        text-align: right;
+    }
+    [dir="rtl"] .nav-links a:hover,
+    [dir="rtl"] .nav-links a.active {
+        border-right-color: var(--secondary-accent) !important;
+        padding-right: 16px !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* ===========================
+   Packages Page & Card Lists RTL Fixes
+   =========================== */
+[dir="rtl"] .package-card-icon {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+[dir="rtl"] .card ul {
+    direction: ltr !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    width: fit-content !important;
+    padding-left: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+
+[dir="rtl"] .card ul li {
+    direction: ltr !important;
+    text-align: right !important;
+    justify-content: flex-end !important;
+}
+
+/* ===========================
+   Footer Contact Info RTL Spacing
+   =========================== */
+[dir="rtl"] .footer-links li svg {
+    margin-right: 0 !important;
+    margin-left: 8px !important;
+}
+
+/* ===========================
+   Packages Cards RTL Overlap Fixes
+   =========================== */
+[dir="rtl"] .top-right-decor {
+    right: auto !important;
+    left: -30px !important;
+}
+
+[dir="rtl"] .bottom-left-decor {
+    left: auto !important;
+    right: -30px !important;
+}
+
+[dir="rtl"] .card .badge-premium {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* ===========================
+   Courses Page Blueprint Section
+   =========================== */
+[dir="rtl"] .step-bg-num {
+    right: auto !important;
+    left: 24px !important;
+}
+
+[dir="rtl"] .premium-step-card:hover .step-bg-num {
+    transform: scale(1.05) translate(4px, 4px) !important;
 }

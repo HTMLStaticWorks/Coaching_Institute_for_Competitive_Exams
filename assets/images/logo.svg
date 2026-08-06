@@ -1,10 +1,33 @@
-<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Cap Diamond (Maroon) -->
-    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#64242F"/>
-    <!-- Tassel (Terracotta) -->
-    <path d="M17 9.5V13.5C17 14.5 16 15 15 15" stroke="#B44446" stroke-width="1.5" stroke-linecap="round"/>
-    <circle cx="15" cy="15" r="1.5" fill="#B44446"/>
-    <!-- Open Book / Cap Base (Blush Pink) -->
-    <path d="M12 12C9 12 6 13.5 6 15.5V19C6 19.5 8 21 12 21C16 21 18 19.5 18 19V15.5C18 13.5 15 12 12 12Z" fill="#FC8F8F"/>
-    <path d="M12 12.5V21" stroke="#64242F" stroke-width="1.5"/>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logoGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#B44446" />
+            <stop offset="50%" stop-color="#64242F" />
+            <stop offset="100%" stop-color="#2D0D12" />
+        </linearGradient>
+        <linearGradient id="goldGrad" x1="12" y1="12" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FC8F8F" />
+            <stop offset="100%" stop-color="#B44446" />
+        </linearGradient>
+        <filter id="shadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#64242F" flood-opacity="0.15"/>
+        </filter>
+    </defs>
+    
+    <!-- Outer Shield with Rounded Corners -->
+    <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#logoGrad)" filter="url(#shadow)" />
+    
+    <!-- Modern Graduation Cap Geometric Emblem -->
+    <!-- Cap Diamond -->
+    <path d="M24 13L37 20L24 27L11 20L24 13Z" fill="url(#goldGrad)" />
+    
+    <!-- Cap Base / Book Structure -->
+    <path d="M16 23.5V28C16 31 19 33 24 33C29 33 32 31 32 28V23.5L24 27.5L16 23.5Z" fill="#FFFFFF" opacity="0.9" />
+    
+    <!-- Center Line Detailing -->
+    <path d="M24 13L24 27.5" stroke="#64242F" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Tassel Highlight -->
+    <path d="M30 21.5L34 26" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="34" cy="27" r="2" fill="#FFFFFF" />
 </svg>
