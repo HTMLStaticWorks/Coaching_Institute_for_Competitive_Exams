@@ -271,6 +271,96 @@
             padding-left: 0 !important;
             padding-right: 10px !important;
         }
+
+        /* Subscriptions Section Responsiveness */
+        .billing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            width: 100%;
+        }
+
+        .billing-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .billing-details-card {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            border-left: 4px solid var(--primary-accent);
+            width: 100%;
+            height: 100%;
+        }
+
+        .billing-grid-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 24px;
+            margin-bottom: 32px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        .billing-actions {
+            display: flex;
+            gap: 16px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+
+        .billing-actions .btn {
+            flex: 1;
+            height: 48px;
+            font-size: 14px;
+        }
+
+        /* Responsive styling for Subscriptions */
+        @media (max-width: 768px) {
+            .billing-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 12px;
+            }
+            .billing-details-card {
+                max-width: 550px;
+                margin: 0 auto 32px auto; /* Centered in 768px */
+                padding: 24px;
+                height: auto !important; /* Force height to expand naturally */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .billing-card-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 12px;
+            }
+            .billing-details-card {
+                padding: 20px;
+                height: auto !important; /* Force height to expand naturally */
+            }
+            .billing-grid-details {
+                grid-template-columns: 1fr !important; /* Stacks vertically to prevent horizontal overflow */
+                gap: 16px;
+            }
+            .billing-actions {
+                flex-direction: column !important; /* Stacks buttons vertically to prevent horizontal overflow */
+                gap: 12px;
+            }
+            .billing-actions .btn {
+                width: 100% !important;
+                flex: none !important; /* Reset flex to prevent vertical squishing */
+                height: 48px !important; /* Lock the height at 48px */
+            }
+        }
     </style>
 </head>
 <body>
@@ -803,57 +893,117 @@
 
             <!-- 6. Subscriptions -->
             <section id="billing" class="dashboard-section" style="padding: 0;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                <div class="billing-header">
                     <h2 style="margin: 0;">Subscription Billing</h2>
-                    <button class="btn btn-primary" style="height: 40px; padding: 0 16px;">Update Plan</button>
+                    <span style="background: rgba(16, 185, 129, 0.1); color: var(--support-accent); padding: 6px 16px; border-radius: 50px; font-size: 14px; font-weight: 600;">Status: Active &amp; Auto-Renewing</span>
                 </div>
-                <div class="grid-2" style="gap: 32px; margin-bottom: 32px;">
-                    <div class="card" style="padding: 24px; display: flex; align-items: center; justify-content: space-between;">
+                
+                <div class="grid-2 tab-stack" style="gap: 32px; margin-bottom: 40px; align-items: stretch;">
+                    <!-- Active Subscription Details Card -->
+                    <div class="card billing-details-card">
                         <div>
-                            <h4 style="color: var(--text-secondary); font-size: 14px; margin-bottom: 8px;">Unbilled Overages</h4>
-                            <div style="font-size: 32px; font-weight: 500; color: var(--primary-accent);">$0.00</div>
+                            <div class="billing-card-header">
+                                <div>
+                                    <span style="color: var(--text-secondary); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Active Study Plan</span>
+                                    <h3 style="font-size: 24px; margin: 4px 0 0 0; font-weight: 600;">Premium Prep Plan</h3>
+                                </div>
+                                <span style="background: var(--primary-accent); color: var(--primary-bg); padding: 4px 12px; border-radius: 50px; font-size: 12px; font-weight: 600; white-space: nowrap;">$89.00 / mo</span>
+                            </div>
+                            <div class="billing-grid-details">
+                                <div>
+                                    <span style="color: var(--text-secondary); font-size: 12px; display: block; margin-bottom: 4px;">Billing Period</span>
+                                    <span style="font-weight: 500; font-size: 15px;">Monthly Billing</span>
+                                </div>
+                                <div>
+                                    <span style="color: var(--text-secondary); font-size: 12px; display: block; margin-bottom: 4px;">Next Payment Date</span>
+                                    <span style="font-weight: 500; font-size: 15px;">Jul 01, 2026</span>
+                                </div>
+                                <div>
+                                    <span style="color: var(--text-secondary); font-size: 12px; display: block; margin-bottom: 4px;">Payment Method</span>
+                                    <span style="font-weight: 500; font-size: 15px; display: inline-flex; align-items: center; gap: 8px;">
+                                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" style="vertical-align: middle;"><rect width="24" height="15" rx="2" fill="#1A1F71"/><circle cx="7" cy="7.5" r="4.5" fill="#EB001B"/><circle cx="11.5" cy="7.5" r="4.5" fill="#F79E1B" opacity="0.85"/></svg>
+                                        Visa ending in 4242
+                                    </span>
+                                </div>
+                                <div>
+                                    <span style="color: var(--text-secondary); font-size: 12px; display: block; margin-bottom: 4px;">Auto-Pay Status</span>
+                                    <span style="font-weight: 600; font-size: 15px; color: var(--support-accent);">Enabled</span>
+                                </div>
+                            </div>
                         </div>
-                        <div style="width: 56px; height: 56px; background: rgba(5, 150, 105, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        <div class="billing-actions">
+                            <button class="btn btn-primary">Change Prep Plan</button>
+                            <button class="btn btn-secondary">Cancel Subscription</button>
                         </div>
                     </div>
-                    <div class="card" style="padding: 24px; display: flex; align-items: center; justify-content: space-between;">
-                        <div>
-                            <h4 style="color: var(--text-secondary); font-size: 14px; margin-bottom: 8px;">Next Auto-Pay</h4>
-                            <div style="font-size: 20px; font-weight: 500;">Jul 01, 2026</div>
-                            <p style="color: var(--text-secondary); font-size: 13px; margin-top: 4px;">Premium Prep Plan ($89/mo)</p>
+
+                    <!-- Right Column: Billing Stats -->
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <div class="card" style="padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+                            <div>
+                                <h4 style="color: var(--text-secondary); font-size: 13px; margin: 0 0 8px 0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Unbilled Overages</h4>
+                                <div style="font-size: 36px; font-weight: 700; color: var(--primary-accent); line-height: 1;">$0.00</div>
+                                <p style="color: var(--text-secondary); font-size: 13px; margin: 8px 0 0 0;">No extra mentorship/tutor fees this cycle.</p>
+                            </div>
+                            <div style="width: 56px; height: 56px; background: rgba(5, 150, 105, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                            </div>
                         </div>
-                        <div style="width: 56px; height: 56px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-accent); flex-shrink: 0;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                        <div class="card" style="padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+                            <div>
+                                <h4 style="color: var(--text-secondary); font-size: 13px; margin: 0 0 8px 0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Auto-Pay Settings</h4>
+                                <div style="font-size: 20px; font-weight: 600; color: var(--text-primary);">Automatic Renewal</div>
+                                <p style="color: var(--text-secondary); font-size: 13px; margin: 6px 0 0 0;">Renews July 01, 2026, charged via Card.</p>
+                            </div>
+                            <div style="width: 56px; height: 56px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--support-accent); flex-shrink: 0;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Invoice History Table -->
+                <h3 style="margin-bottom: 24px; font-size: 20px; font-weight: 600;">Payment &amp; Invoice History</h3>
                 <div class="card" style="padding: 0; overflow: hidden;">
                     <div class="table-responsive">
                         <table style="width: 100%; border-collapse: collapse;">
                             <thead style="background: var(--secondary-bg); border-bottom: 1px solid var(--border-color);">
                                 <tr>
-                                    <th style="padding: 16px; text-align: left; font-weight: 500;">Invoice ID</th>
-                                    <th style="padding: 16px; text-align: left; font-weight: 500;">Billing Period</th>
-                                    <th style="padding: 16px; text-align: left; font-weight: 500;">Amount</th>
-                                    <th style="padding: 16px; text-align: left; font-weight: 500;">Status</th>
-                                    <th style="padding: 16px; text-align: right; font-weight: 500;">Action</th>
+                                    <th style="padding: 18px 24px; text-align: left; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);">Invoice ID</th>
+                                    <th style="padding: 18px 24px; text-align: left; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);">Billing Period</th>
+                                    <th style="padding: 18px 24px; text-align: left; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);">Amount</th>
+                                    <th style="padding: 18px 24px; text-align: left; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);">Status</th>
+                                    <th style="padding: 18px 24px; text-align: right; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 16px; font-weight: 500;">#INV-2026-06</td>
-                                    <td style="padding: 16px; color: var(--text-secondary);">Jun 01 - Jun 30, 2026</td>
-                                    <td style="padding: 16px; font-weight: 500;">$89.00</td>
-                                    <td style="padding: 16px;"><span style="background: rgba(16, 185, 129, 0.1); color: var(--support-accent); padding: 4px 8px; border-radius: 4px; font-size: 13px;">Paid</span></td>
-                                    <td style="padding: 16px; text-align: right;"><button class="btn btn-secondary" style="padding: 6px 12px; font-size: 13px; height: auto;">Download Receipt</button></td>
+                                    <td style="padding: 18px 24px; font-weight: 500;">#INV-2026-06</td>
+                                    <td style="padding: 18px 24px; color: var(--text-secondary);">Jun 01 - Jun 30, 2026</td>
+                                    <td style="padding: 18px 24px; font-weight: 600;">$89.00</td>
+                                    <td style="padding: 18px 24px;">
+                                        <span style="background: rgba(16, 185, 129, 0.1); color: var(--support-accent); padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 600;">Paid</span>
+                                    </td>
+                                    <td style="padding: 18px 24px; text-align: right;">
+                                        <a href="#" class="btn-link" style="color: var(--primary-accent); display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--secondary-accent)'" onmouseout="this.style.color='var(--primary-accent)'">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                            Receipt
+                                        </a>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td style="padding: 16px; font-weight: 500;">#INV-2026-05</td>
-                                    <td style="padding: 16px; color: var(--text-secondary);">May 01 - May 31, 2026</td>
-                                    <td style="padding: 16px; font-weight: 500;">$89.00</td>
-                                    <td style="padding: 16px;"><span style="background: rgba(16, 185, 129, 0.1); color: var(--support-accent); padding: 4px 8px; border-radius: 4px; font-size: 13px;">Paid</span></td>
-                                    <td style="padding: 16px; text-align: right;"><button class="btn btn-secondary" style="padding: 6px 12px; font-size: 13px; height: auto;">Download Receipt</button></td>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 18px 24px; font-weight: 500;">#INV-2026-05</td>
+                                    <td style="padding: 18px 24px; color: var(--text-secondary);">May 01 - May 31, 2026</td>
+                                    <td style="padding: 18px 24px; font-weight: 600;">$89.00</td>
+                                    <td style="padding: 18px 24px;">
+                                        <span style="background: rgba(16, 185, 129, 0.1); color: var(--support-accent); padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 600;">Paid</span>
+                                    </td>
+                                    <td style="padding: 18px 24px; text-align: right;">
+                                        <a href="#" class="btn-link" style="color: var(--primary-accent); display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--secondary-accent)'" onmouseout="this.style.color='var(--primary-accent)'">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                            Receipt
+                                        </a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

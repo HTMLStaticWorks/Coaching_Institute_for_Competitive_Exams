@@ -1827,8 +1827,8 @@ th {
     }
 }
 
-/* ≤360px: Remove background-image entirely, let the <img> block show */
-@media (max-width: 360px) {
+/* ≤368px: Remove background-image entirely, let the <img> block show */
+@media (max-width: 368px) {
     .hero-has-bg {
         background-image: none !important;
     }
@@ -2030,10 +2030,10 @@ th {
 /* 3. Study Packages: Horizontal scrollbar for Package Comparison */
 .table-responsive {
     width: 100%;
-    overflow-x: scroll !important;
+    overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: auto !important;
-    scrollbar-color: var(--primary-accent) #e6f7f1 !important;
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-accent) #e6f7f1;
 }
 
 /* Custom Scrollbar for Package Comparison on small viewports */
@@ -2300,20 +2300,28 @@ th {
     .page-hero {
         margin-top: 88px;
         background-image: none !important;
-        background-color: var(--primary-bg);
+        background-color: var(--primary-bg) !important;
         padding-top: 24px;
         padding-bottom: 32px;
     }
 
     .page-hero-overlay {
-        display: block !important;
-        background: linear-gradient(135deg, rgba(30, 8, 12, 0.90) 0%, rgba(18, 5, 8, 0.82) 100%);
+        display: none !important;
+    }
+
+    .hero-has-bg {
+        background-image: none !important;
+        background-color: var(--primary-bg) !important;
+    }
+
+    .hero-bg-overlay {
+        display: none !important;
     }
 
     .hero-has-bg .text-highlight,
     .page-hero .text-highlight,
     .hero-premium .text-highlight {
-        background: linear-gradient(120deg, #FC8F8F, #FFDFDF) !important;
+        background: linear-gradient(120deg, var(--primary-accent), var(--secondary-accent)) !important;
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
@@ -2322,32 +2330,57 @@ th {
 
     .page-hero h1,
     .hero-premium h1 {
-        color: #FFFFFF !important;
+        color: var(--text-primary) !important;
         font-size: 28px;
-        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7) !important;
+        text-shadow: none !important;
     }
 
     .page-hero .subheading,
     .hero-premium .subheading {
-        color: rgba(255, 255, 255, 0.92) !important;
+        color: var(--text-secondary) !important;
         font-size: 14px;
         margin-bottom: 20px;
-        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6) !important;
+        text-shadow: none !important;
     }
 
     .page-hero .badge-premium,
     .hero-premium .badge-premium {
+        background: rgba(180, 68, 70, 0.1) !important;
+        border: 1px solid rgba(180, 68, 70, 0.2) !important;
+        color: var(--primary-accent) !important;
+    }
+
+    [data-theme="dark"] .page-hero .badge-premium,
+    [data-theme="dark"] .hero-premium .badge-premium {
+        background: rgba(252, 143, 143, 0.15) !important;
+        border: 1px solid rgba(252, 143, 143, 0.3) !important;
+        color: var(--primary-accent) !important;
+    }
+
+    .hero-premium .btn-glass,
+    .hero-has-bg .btn-glass {
+        background: transparent !important;
+        border: 2px solid var(--primary-accent) !important;
+        color: var(--primary-accent) !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    [data-theme="dark"] .hero-premium .btn-glass,
+    [data-theme="dark"] .hero-has-bg .btn-glass {
         background: rgba(255, 255, 255, 0.15) !important;
-        border: 1px solid rgba(255, 255, 255, 0.30) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
         color: #FFFFFF !important;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
     }
 
     .page-hero-stats {
-        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-top: 1px solid var(--border-color) !important;
     }
 
     .page-hero-stat-item {
-        color: rgba(255, 255, 255, 0.90) !important;
+        color: var(--text-secondary) !important;
         font-size: 13px;
     }
 

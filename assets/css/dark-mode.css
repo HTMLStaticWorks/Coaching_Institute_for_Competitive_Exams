@@ -75,3 +75,12 @@
 [data-theme="dark"] img {
     opacity: 0.9;
 }
+
+/* Invert calendar/time picker indicators in dark mode for better visibility */
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
+[data-theme="dark"] input[type="time"]::-webkit-calendar-picker-indicator,
+[data-theme="dark"] input[type="month"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(1.2);
+    cursor: pointer;
+}
+
